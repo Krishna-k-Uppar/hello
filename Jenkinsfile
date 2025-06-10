@@ -9,7 +9,6 @@ pipeline {
         stage('Checkout') {  
             steps { 
                 git branch: 'main', url: 'https://github.com/Krishna-k-Uppar/hello.git'
-
             } 
         } 
 
@@ -25,11 +24,10 @@ pipeline {
             } 
         } 
 
-       stage('Run Application') {  
-           steps { 
-              bat 'java -jar target\\Hello2-0.0.1-SNAPSHOT.jar'
-
-              }
-         }
-     } 
+        stage('Run Application') {  
+            steps { 
+                bat 'java -jar target\\Hello2-0.0.1-SNAPSHOT.jar'
+            }
+        }
+    } 
 }
