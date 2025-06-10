@@ -8,7 +8,7 @@ pipeline {
     stages { 
         stage('Checkout') {  
             steps { 
-                git branch: 'master', url: 'https://github.com/RakeshAM10/Hello.git'  
+                git branch:https://github.com/Krishna-k-Uppar/hello.git 
             } 
         } 
 
